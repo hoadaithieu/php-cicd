@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+    commands:
+      - echo Installing dependencies...
+      - composer install || true
+  build:
+    commands:
+      - echo Build completed
+artifacts:
+  files:
+    - '**/*'
