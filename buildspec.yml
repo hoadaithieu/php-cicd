@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  variables:
+    HOME: "/tmp" # Đặt biến môi trường HOME
+
 phases:
   install:
     runtime-versions:
